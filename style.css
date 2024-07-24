@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ /**=================以上清除樣式==================*/
+ /**=================外框輔助線==================*/
+
+ /* {
+    outline: 1px solid red;
+ }
+
+ /**=================預防Ｘ軸==================*/
+ img{
+    max-width: 100%;
+    height: auto;
+ }
+
+ *,*::after,*::before {
+    box-sizing: border-box;
+ }
+
+ body{
+	font-family: "Bruno Ace SC" sans-serif;
+	line-height: 1.5;
+ }
+
+
+
+
+ /**=================基礎設定==================*/
+
+
+.h1{
+    font-size: 20px;
+    font-weight: bold;
+	margin-bottom: 24px;
+
+}
+
+.p,.h2{
+    font-size: 16px;
+	margin-bottom: 24px;
+}
+
+
+
+
+/**=================容器設定==================*/
+.body{
+	max-width: 970px;
+    margin: auto;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height:1.5 ;
+	
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+	flex-direction: row;
+}
+
+.nav a{
+	color: #FFF;
+}
+
+.nav-1{
+    background-color: #3399FF;
+	padding: 10px;
+}
+.nav-1:hover{
+	background-color: #f3b124;
+}
+.boder{
+	border: 2px solid black;
+	width: 180px;
+	padding: 5px;
+}
+
+.box-1{
+	width: 703px;
+	padding: 10px;
+	border: 2px solid black;
+}
+.box-2{
+	max-width: 100%;
+}
+
+
+
+.footer{
+	max-width: 970px;
+    margin: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+
+
+
+/**=================RWD==================*/
+
+@media(max-width: 992px){
+	.container {
+	  flex-wrap: wrap;
+	}
+	
+	.logo{
+		content: url(images/150*150.png);
+	}
+
+	.boder,.box-1{
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	.container-1,.box-2{
+		display: flex;
+		align-items: center;
+		flex-direction: column;		
+	}
+	.nav{
+		flex-wrap: wrap;
+		text-align: center;
+    }
+
+	.nav li{
+		width: 50%;
+		margin-bottom: 10px;
+	}
+	
+
+}
